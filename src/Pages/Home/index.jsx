@@ -1,11 +1,12 @@
 import React from 'react'
 import Header from '../../Components/Header'
+import BuySell from '../../Components/BuySell'
 
 const Home = () => {
   return (
-    <div className={``}>
+    <div className={`bg-background`}>
         <Header />
-        <div className={`text-onprimary flex items-center w-max mx-auto mt-10`}>
+        <div className={`text-onprimary flex justify-center items-center pt-10 relative z-10`}>
             <div className={`tracking-[-0.4rem] text-8xl font-bold`}>
                 <div className={``}>
                     Find Your
@@ -23,14 +24,15 @@ const Home = () => {
                 </div>
             </div>
         </div>
-        <div className={`bg-blue-200 flex justify-end mt-4`}>
-            <div>
+        <div className={`bg-background flex flex-col pt-4 relative`}>
+            <div className={`self-end h-96 `}>
                 <img
-                    src='/public/building1.png'
+                    className={`absolute bottom-0 right-0`}
+                    src='/building1.png'
                 />
             </div>
-            <div>
-                
+            <div className={`absolute -bottom-4 self-center p-2 w-3/4`}>
+                <BuySell />
             </div>
         </div>
     </div>

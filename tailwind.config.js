@@ -8,7 +8,8 @@ export default {
     extend: {
       colors: {
         'background': '#F6F6F7',
-        'onprimary': '#162124'
+        'onprimary': '#162124',
+        'secondary': '#093642',
       },
       fontFamily: {
         'body': 'Montserrat'
